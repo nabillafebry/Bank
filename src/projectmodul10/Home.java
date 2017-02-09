@@ -31,16 +31,16 @@ public class Home extends javax.swing.JFrame {
         jLabel2 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
         saldo = new javax.swing.JButton();
-        penarikan = new javax.swing.JButton();
-        transfer = new javax.swing.JButton();
-        setor = new javax.swing.JButton();
-        inputPenarikan = new javax.swing.JTextField();
-        inputTransfer = new javax.swing.JTextField();
-        inputSetor = new javax.swing.JTextField();
-        keterangan = new javax.swing.JLabel();
-        nilai = new javax.swing.JLabel();
         jPanel1 = new javax.swing.JPanel();
         logOut = new javax.swing.JButton();
+        keterangan = new javax.swing.JLabel();
+        penarikan = new javax.swing.JButton();
+        inputPenarikan = new javax.swing.JTextField();
+        transfer = new javax.swing.JButton();
+        inputTransfer = new javax.swing.JTextField();
+        inputSetor = new javax.swing.JTextField();
+        setor = new javax.swing.JButton();
+        nilai = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         getContentPane().setLayout(null);
@@ -69,50 +69,6 @@ public class Home extends javax.swing.JFrame {
         getContentPane().add(saldo);
         saldo.setBounds(29, 138, 103, 32);
 
-        penarikan.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        penarikan.setText("PENARIKAN");
-        penarikan.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                penarikanActionPerformed(evt);
-            }
-        });
-        getContentPane().add(penarikan);
-        penarikan.setBounds(30, 180, 103, 32);
-
-        transfer.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        transfer.setText("TRANSFER");
-        transfer.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                transferActionPerformed(evt);
-            }
-        });
-        getContentPane().add(transfer);
-        transfer.setBounds(30, 220, 103, 32);
-
-        setor.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
-        setor.setText("SETOR");
-        setor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                setorActionPerformed(evt);
-            }
-        });
-        getContentPane().add(setor);
-        setor.setBounds(30, 260, 103, 32);
-        getContentPane().add(inputPenarikan);
-        inputPenarikan.setBounds(150, 180, 220, 30);
-        getContentPane().add(inputTransfer);
-        inputTransfer.setBounds(150, 220, 220, 30);
-        getContentPane().add(inputSetor);
-        inputSetor.setBounds(150, 260, 220, 30);
-
-        keterangan.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
-        getContentPane().add(keterangan);
-        keterangan.setBounds(200, 270, 320, 30);
-
-        nilai.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        getContentPane().add(nilai);
-        nilai.setBounds(300, 310, 230, 30);
-
         jPanel1.setBackground(new java.awt.Color(154, 242, 183));
         jPanel1.setLayout(null);
 
@@ -125,6 +81,56 @@ public class Home extends javax.swing.JFrame {
         });
         jPanel1.add(logOut);
         logOut.setBounds(30, 350, 75, 23);
+
+        keterangan.setFont(new java.awt.Font("Tahoma", 0, 18)); // NOI18N
+        jPanel1.add(keterangan);
+        keterangan.setBounds(340, 330, 320, 30);
+
+        penarikan.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        penarikan.setText("PENARIKAN");
+        penarikan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                penarikanActionPerformed(evt);
+            }
+        });
+        jPanel1.add(penarikan);
+        penarikan.setBounds(30, 180, 103, 32);
+
+        inputPenarikan.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                inputPenarikanActionPerformed(evt);
+            }
+        });
+        jPanel1.add(inputPenarikan);
+        inputPenarikan.setBounds(170, 180, 220, 30);
+
+        transfer.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        transfer.setText("TRANSFER");
+        transfer.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                transferActionPerformed(evt);
+            }
+        });
+        jPanel1.add(transfer);
+        transfer.setBounds(30, 220, 103, 32);
+        jPanel1.add(inputTransfer);
+        inputTransfer.setBounds(170, 220, 220, 30);
+        jPanel1.add(inputSetor);
+        inputSetor.setBounds(170, 260, 220, 30);
+
+        setor.setFont(new java.awt.Font("Times New Roman", 1, 12)); // NOI18N
+        setor.setText("SETOR");
+        setor.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                setorActionPerformed(evt);
+            }
+        });
+        jPanel1.add(setor);
+        setor.setBounds(30, 260, 103, 32);
+
+        nilai.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        jPanel1.add(nilai);
+        nilai.setBounds(510, 360, 140, 30);
 
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 670, 410);
@@ -171,6 +177,10 @@ public class Home extends javax.swing.JFrame {
         new Login().setVisible(true);
         this.dispose();
     }//GEN-LAST:event_logOutActionPerformed
+
+    private void inputPenarikanActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_inputPenarikanActionPerformed
+        // TODO add your handling code here:
+    }//GEN-LAST:event_inputPenarikanActionPerformed
 
     /**
      * @param args the command line arguments

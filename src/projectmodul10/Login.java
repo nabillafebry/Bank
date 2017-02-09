@@ -75,7 +75,7 @@ public class Login extends javax.swing.JFrame {
         getContentPane().add(jPanel1);
         jPanel1.setBounds(0, 0, 410, 190);
 
-        pack();
+        setBounds(0, 0, 425, 230);
     }// </editor-fold>//GEN-END:initComponents
 
     private void goActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_goActionPerformed
